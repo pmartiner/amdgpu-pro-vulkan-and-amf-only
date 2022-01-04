@@ -1,6 +1,8 @@
-# Only the vulkan part of AMDGPU-PRO drivers
+# Only the vulkan and AMF parts of AMDGPU-PRO drivers
 
-Can live next to RADV
+This is a fork of tkg's script for installing the Vulkan components of the AMDGPU-PRO drivers. I modified it so that it installs the AMF component as well. I modified tkg's script for my own personal use, but if you need to get AMF encoding working on an Arch based distro, then you can use this script to make things easier for you.
+
+Can live next to RADV(but not AMDVLK, for some strange reason)
 
  https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux
 
@@ -12,10 +14,9 @@ or
 
 You can also pass `VK_ICD_FILENAMES=/opt/amdgpu-pro/etc/vulkan/icd.d/amd_icd64.json:/opt/amdgpu-pro/etc/vulkan/icd.d/amd_icd32.json` if unsure.
 
-
 ## Build:
 ```
-git clone https://github.com/Frogging-Family/amdgpu-pro-vulkan-only.git
-cd amdgpu-pro-vulkan-only
+git clone https://github.com/DoomPenguin9/amdgpu-pro-vulkan-and-amf-only.git
+cd amdgpu-pro-vulkan-and-amf-only
 makepkg -si
 ```
