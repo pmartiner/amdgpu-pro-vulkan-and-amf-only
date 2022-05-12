@@ -19,10 +19,10 @@ plain '             `.-:///////:-.`'
 
 pkgname=amdgpu-pro-vulkan-and-amf-only
 pkgver=22.10.2
+pkgrel=1411481
 _amdver=22.10.2
 _pkgveramd=22.10.2-1411481
 _amfver=1.4.24-1411481
-pkgrel=1
 arch=('x86_64')
 url='http://www.amd.com'
 license=('custom:AMD')
