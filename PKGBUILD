@@ -18,11 +18,11 @@ plain '       `-+shdNNNNNNNNNNNNNNNdhs+-`'
 plain '             `.-:///////:-.`'
 
 pkgname=amdgpu-pro-vulkan-and-amf-only
-pkgver=22.10.2
-pkgrel=1411481
-_amdver=22.10.2
-_pkgveramd=22.10.2-1411481
-_amfver=1.4.24-1411481
+pkgver=22.10.3
+pkgrel=1420323 
+_amdver=22.10.3
+_pkgveramd=22.10.3-1420323
+_amfver=1.4.24-1420323
 arch=('x86_64')
 url='http://www.amd.com'
 license=('custom:AMD')
@@ -33,9 +33,9 @@ DLAGENTS='https::/usr/bin/wget --referer https://www.amd.com/en/support/kb/relea
 source=(https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/v/vulkan-amdgpu-pro/vulkan-amdgpu-pro_${_pkgveramd}_amd64.deb
         https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/v/vulkan-amdgpu-pro/vulkan-amdgpu-pro_${_pkgveramd}_i386.deb
 	https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/a/amf-amdgpu-pro/amf-amdgpu-pro_${_amfver}_amd64.deb)
-sha256sums=('ebdb02d8a01cf400850604716dff7901bdecd7d0ba44c9ff34f0f5b7abdc7531'
-            '236f04e87f268a71d377553dc22d41d3cffee38c5a206cf4bd4a1d1588be0d95'
-            'b93605a8bfb51347a770e4c2f9d3d2f434eb62c5edf8f92ddea020f00d97ce57')
+sha256sums=('6251e3f4003d305b60e6c82d4b01c933d23631b24f8d65081d5afa01f383dbe5'
+            '4abd27433c147b52eb95787377b8a1f021007f5ca21d2f78d9798859420305b8'
+            '872d2291dcdf4bc43e939b3b15ca02a490b75eb98e893c285b164ca49871e214')
 
 # extracts a debian package
 # $1: deb file to extract
@@ -73,4 +73,3 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	msg2 "#################################################################"
 	sudo ln -sfn /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.24 /lib/libamfrt64.so.1
 }
-
