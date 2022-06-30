@@ -1,9 +1,28 @@
+plain '       .---.`               `.---.'
+plain '    `/syhhhyso-           -osyhhhys/`'
+plain '   .syNMdhNNhss/``.---.``/sshNNhdMNys.'
+plain '   +sdMh.`+MNsssssssssssssssNM+`.hMds+'
+plain '   :syNNdhNNhssssssssssssssshNNhdNNys:'
+plain '    /ssyhhhysssssssssssssssssyhhhyss/'
+plain '    .ossssssssssssssssssssssssssssso.'
+plain '   :sssssssssssssssssssssssssssssssss:'
+plain '  /sssssssssssssssssssssssssssssssssss/'
+plain ' :sssssssssssssoosssssssoosssssssssssss:'
+plain ' osssssssssssssoosssssssoossssssssssssso'
+plain ' osssssssssssyyyyhhhhhhhyyyyssssssssssso'
+plain ' /yyyyyyhhdmmmmNNNNNNNNNNNmmmmdhhyyyyyy/'
+plain '  smmmNNNNNNNNNNNNNNNNNNNNNNNNNNNNNmmms'
+plain '   /dNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNd/'
+plain '    `:sdNNNNNNNNNNNNNNNNNNNNNNNNNds:`'
+plain '       `-+shdNNNNNNNNNNNNNNNdhs+-`'
+plain '             `.-:///////:-.`'
+
 pkgname=amdgpu-pro-vulkan-and-amf-only
-pkgver=22.20
-pkgrel=1438747
-_amdver=22.20
-_pkgveramd=22.20-1438747~22.04
-_amfver=1.4.26-1438747~22.04
+pkgver=22.10.3
+pkgrel=1420323 
+_amdver=22.10.3
+_pkgveramd=22.10.3-1420323
+_amfver=1.4.24-1420323
 arch=('x86_64')
 url='http://www.amd.com'
 license=('custom:AMD')
@@ -14,10 +33,9 @@ DLAGENTS='https::/usr/bin/wget --referer https://www.amd.com/en/support/kb/relea
 source=(https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/v/vulkan-amdgpu-pro/vulkan-amdgpu-pro_${_pkgveramd}_amd64.deb
         https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/v/vulkan-amdgpu-pro/vulkan-amdgpu-pro_${_pkgveramd}_i386.deb
 	https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/a/amf-amdgpu-pro/amf-amdgpu-pro_${_amfver}_amd64.deb)
-
-sha256sums=('8030f2702805bf42192e34cb2d7beb647aec2afa2106e87229a047855d2429f7'
-            '04145f457bc6e1491bc63485041926afb5b2b2290493d9dda9c026ab0c89d713'
-            'b8a936bcb181ca02df12cbb67773442955834b5443e7a89618774c5771185c2a')
+sha256sums=('6251e3f4003d305b60e6c82d4b01c933d23631b24f8d65081d5afa01f383dbe5'
+            '4abd27433c147b52eb95787377b8a1f021007f5ca21d2f78d9798859420305b8'
+            '872d2291dcdf4bc43e939b3b15ca02a490b75eb98e893c285b164ca49871e214')
 
 # extracts a debian package
 # $1: deb file to extract
