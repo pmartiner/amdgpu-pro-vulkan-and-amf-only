@@ -58,6 +58,8 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	
 	rm -rf "${pkgdir}"/etc
 
+	ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.26 /lib/libamfrt64.so.1
+
 	msg2 "#################################################################"
 	msg2 ""
 	msg2 "64-bit loader in /opt/amdgpu-pro/etc/vulkan/icd.d/amd_icd64.json"
@@ -71,5 +73,4 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	msg2 "changelog and copyright in /usr/share/doc/amf-amdgpu-pro"
 	msg2 ""
 	msg2 "#################################################################"
-	sudo ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.24 /lib/libamfrt64.so.1
 }
