@@ -58,7 +58,6 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	
 	rm -rf "${pkgdir}"/etc
 
-	ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.26 /lib/libamfrt64.so.1
 
 	msg2 "#################################################################"
 	msg2 ""
