@@ -21,6 +21,5 @@ You need to run your app(e.g OBS) with the proprietary Vulkan drivers if you wan
 git clone https://github.com/DoomPenguin9/amdgpu-pro-vulkan-and-amf-only.git
 cd amdgpu-pro-vulkan-and-amf-only
 makepkg -si
-sudo ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.26 /lib/libamfrt64.so.1
 
 ```
