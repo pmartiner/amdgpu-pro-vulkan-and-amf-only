@@ -55,7 +55,6 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	extract_deb "${srcdir}"/vulkan-amdgpu-pro_${_pkgveramd}_amd64.deb
 	extract_deb "${srcdir}"/vulkan-amdgpu-pro_${_pkgveramd}_i386.deb
 	extract_deb "${srcdir}"/amf-amdgpu-pro_${_amfver}_amd64.deb
-	
 	rm -rf "${pkgdir}"/etc
 
 
@@ -73,3 +72,5 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	msg2 ""
 	msg2 "#################################################################"
 }
+
+sudo ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.26 /usr/lib/libamfrt64.so.1
