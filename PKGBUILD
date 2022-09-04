@@ -75,5 +75,6 @@ package_amdgpu-pro-vulkan-and-amf-only () {
 	msg2 "#################################################################"
 }
 sudo rm /usr/lib/libamfrt64.so.1
+sudo rm /usr/lib/libamdenc64.so
 sudo ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamfrt64.so.1.4.26 /usr/lib/libamfrt64.so.1
 sudo ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/libamdenc64.so.1.0 /usr/lib/libamdenc64.so
